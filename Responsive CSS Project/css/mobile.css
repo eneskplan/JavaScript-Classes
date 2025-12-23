@@ -1,0 +1,40 @@
+/* mobile.css */
+#navbar {
+  flex-direction: column;
+  height: auto;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+#navbar ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#about {
+  padding: 2rem 0.75rem 2.5rem;
+}
+
+#about #about-bot {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "education"
+    "skills"
+    "certificates";
+  gap: 1.75rem;
+  padding: 1.5rem 0.5rem 2rem;
+}
+
+#about #about-bot #skills,
+#about #about-bot .certificates {
+  padding: 1.1rem 0.75rem;
+}
+
+#about #about-bot #skills ul li {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.75rem;
+}
+
+#experince {
+  padding: 2.5rem 0.75rem 3rem;
+}

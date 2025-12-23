@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enes Kaplan websitesi</title>
+    <meta name="keywords" content="Enes Kaplan Frontend Website HTML CSS " />
+    <meta name="description" content="Enes Kaplan'ın responsive websitesi" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- 501px – 768px tablet -->
+    <link
+      rel="stylesheet"
+      href="css/tablet.css"
+      media="screen and (min-width: 501px) and (max-width: 768px)"
+    />
+
+    <!-- 0 – 500px mobile -->
+    <link
+      rel="stylesheet"
+      href="css/mobile.css"
+      media="screen and (max-width: 500px)"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <div class="container">
+        <nav id="navbar">
+          <h1 class="heading-large">Enes Kaplan</h1>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experince">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="bg-blue text-white">
+      <img src="images/enes.jpeg" alt="Enes Kaplan" />
+      <div class="title container">
+        <h2 class="text-center heading-large">Enes Kaplan</h2>
+        <p class="text-center italic opacity-medium">
+          Junior Software Developer | Frontend Developer
+        </p>
+      </div>
+
+      <!-- summary -->
+      <div id="summary" class="summary container">
+        <div class="summary-p">
+          <p class="text-justify">
+            I'm a Computer Engineering graduate from Duzce University who loves
+            to learn and solve problems. I work well in teams, communicate
+            openly, and I am ready to contribute my skills to any collaborative
+            environment.
+          </p>
+        </div>
+      </div>
+
+      <!-- education, skills, certificates -->
+      <div id="about-bot" class="container">
+        <!-- education -->
+        <div id="education">
+          <div class="heading">
+            <h3 class="text-center">Education</h3>
+          </div>
+          <div class="explain-span">
+            <span class="text-center">2021-2025</span>
+          </div>
+          <div class="explain-p">
+            <p>Computer Engineering at Duzce University</p>
+          </div>
+        </div>
+
+        <!-- skills -->
+        <div id="skills">
+          <h3 class="text-center">Skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>REACT</li>
+            <li>C#</li>
+            <li>JAVA</li>
+          </ul>
+        </div>
+
+        <!-- certificates -->
+        <div class="certificates">
+          <h3 class="text-center">Certificates</h3>
+          <table>
+            <tr>
+              <td>HTML5 ile Web Geliştirme</td>
+              <td>BTK AKADEMİ</td>
+            </tr>
+            <tr>
+              <td>CSS Temelleri</td>
+              <td>BTK AKADEMİ</td>
+            </tr>
+            <tr>
+              <td>C# Programlama</td>
+              <td>BTK AKADEMİ</td>
+            </tr>
+            <tr>
+              <td>C++ ile Programlamaya Giriş</td>
+              <td>BTK AKADEMİ</td>
+            </tr>
+            <tr>
+              <td>Machine Learning Onramp</td>
+              <td>MathWorks</td>
+            </tr>
+            <tr>
+              <td>Image Processing Onramp</td>
+              <td>MathWorks</td>
+            </tr>
+            <tr>
+              <td>Deep Learning Onramp</td>
+              <td>MathWorks</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experince" class="bg-f2f2f2">
+      <div class="experince container">
+        <h3 class="blue text-center">EXPERIENCES</h3>
+
+        <!-- huawei -->
+        <div id="huawei" class="exp-card">
+          <h4 class="blue">HUAWEI Aug 2024 - September 2024</h4>
+          <span>Software Developer Intern</span>
+          <p>
+            Developed a dynamic To-Do list application using HTML, CSS,
+            JavaScript, Vue.js, and Bootstrap. Implemented responsive UI and
+            interactive task management features. I also experienced software
+            verification; make functionality tests as an end user related to
+            developed, fixed features.
+          </p>
+        </div>
+
+        <!-- ayt -->
+        <div id="ayt" class="exp-card">
+          <h4 class="blue">AYT Technologies October 2025 - November 2025</h4>
+          <span>Software Developer Intern</span>
+          <p>
+            Developed features for AYT Technologies’ website using HTML, CSS,
+            JavaScript, React, Next.js, and TypeScript. Built responsive page
+            layouts and reusable UI components. Managed version control with
+            Git/GitHub (branching, commits, PRs) with regular pushes to the
+            repository. Used Trello for task tracking and sprint planning
+            (creating/updating cards, managing checklists, and tracking progress
+            across boards).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="bg-f2f2f2">
+      <div class="projects container">
+        <h3 class="blue text-center section-title">PROJECTS</h3>
+
+        <div class="project-grid">
+          <!-- 1) Sentiment Analysis -->
+          <article class="project-card">
+            <div class="project-header">
+              <h4>Sentiment Analysis and Abstractive Summarization</h4>
+
+              <a
+                href="https://github.com/eneskplan/SentimentAnalysis"
+                class="project-link-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View project on GitHub"
+              >
+                🔗
+              </a>
+            </div>
+            <p class="project-desc">
+              I performed sentiment analysis on Amazon product reviews and
+              Q&amp;A data with DistilBERT and Twitter-RoBERTa models. Data
+              classified with CardiffNLP RoBERTa model was summarized with BART
+              and T5 models. Data cleaning, model comparison, class-based
+              analysis and output interpretation were carried out by me.
+            </p>
+          </article>
+
+          <!-- 2) Task Management -->
+          <article class="project-card">
+            <div class="project-header">
+              <h4>Task Management Application (To-do List)</h4>
+
+              <a
+                href="https://github.com/eneskplan/To-do-List"
+                class="project-link-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View project on GitHub"
+              >
+                🔗
+              </a>
+            </div>
+            <p class="project-desc">
+              Developed using Vue.js, this web-based task tracking application
+              allows users to add, delete and mark tasks as completed. The
+              project provided experience in component-based structure, state
+              management and user interface development.
+            </p>
+          </article>
+
+          <!-- 3) Brain Tumor -->
+          <article class="project-card">
+            <div class="project-header">
+              <h4>Brain Tumor Detection and Classification on MRI Images</h4>
+            </div>
+            <p class="project-desc">
+              I used YOLOv2, ResNet-50 (transfer learning) and a custom CNN
+              model (MyCNN) for tumor detection and classification in brain MRI
+              images. For segmentation, I applied active contour method in
+              MATLAB. The whole process was integrated with GUI interface;
+              classification, detection and segmentation results were compared
+              with success rates.
+            </p>
+          </article>
+
+          <!-- 4) IoT Project -->
+          <article class="project-card">
+            <div class="project-header">
+              <h4>IoT-Based Temperature and Humidity Monitoring System</h4>
+            </div>
+            <p class="project-desc">
+              Collected temperature and humidity data using ESP32 and DHT11,
+              transmitted via MQTT to an Ubuntu server. Processed data with
+              Node-RED, stored in InfluxDB, and visualized using Grafana. The
+              system was deployed in real-time using Docker-based IOTstack.
+            </p>
+          </article>
+
+          <!-- 5) Tomato Leaf Mobile App -->
+          <article class="project-card">
+            <div class="project-header">
+              <h4>Tomato Leaf Disease Classification Mobile Application</h4>
+            </div>
+            <p class="project-desc">
+              Designed and developed an Android application in Kotlin that
+              enables end-users to easily detect tomato leaf diseases by
+              selecting images from their device gallery. The core of the app is
+              a custom-trained Convolutional Neural Network (CNN) model, built
+              in Python and integrated with TensorFlow Lite for fast, on-device
+              inference without requiring an internet connection.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="bg-blue text-white">
+      <div class="container contact-inner">
+        <h3 class="contact-title">CONTACT</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span>+90 555 123 45 67</span>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span>İstanbul, Türkiye</span>
+          </div>
+        </div>
+
+        <div class="contact-links-row">
+          <a
+            href="mailto:enes@example.com"
+            class="contact-btn contact-btn-mail"
+          >
+            <i class="fa-solid fa-envelope"></i>
+            Email
+          </a>
+
+          <a
+            href="https://github.com/eneskplan"
+            class="contact-btn contact-btn-github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/enes-kaplan-a0265b240/"
+            class="contact-btn contact-btn-linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+    <script>
+      function smoothScrollTo(targetY, duration) {
+        var startY = window.pageYOffset;
+        var diff = targetY - startY;
+        var startTime = performance.now();
+
+        function step(now) {
+          var time = Math.min(1, (now - startTime) / duration);
+
+          var ease = 1 - Math.pow(1 - time, 3);
+
+          window.scrollTo(0, startY + diff * ease);
+
+          if (time < 1) {
+            requestAnimationFrame(step);
+          }
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+          anchor.addEventListener("click", function (e) {
+            var targetId = this.getAttribute("href");
+
+            if (targetId && targetId.length > 1) {
+              e.preventDefault();
+
+              var target = document.querySelector(targetId);
+              if (!target) return;
+
+              // Sticky header yüksekliği
+              var header = document.querySelector("header");
+              var headerHeight = header ? header.offsetHeight : 0;
+
+              var elementPosition =
+                target.getBoundingClientRect().top + window.pageYOffset;
+              var offsetPosition = elementPosition - headerHeight;
+              smoothScrollTo(offsetPosition, 600);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
