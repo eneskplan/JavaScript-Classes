@@ -4,6 +4,7 @@ const titleElement = document.querySelector("#title");
 const directorElement = document.querySelector("#director");
 const urlElement = document.querySelector("#url");
 const secondCardBody = document.querySelectorAll(".card-body")[1]
+const clearFilms = document.getElementById("clear-films")
 
 // UI Object
 const ui = new UI();
@@ -22,6 +23,7 @@ function eventListeners() {
     ui.loadAllFilms(films);
   })
   secondCardBody.addEventListener("click",deleteFilm)
+  clearFilms.addEventListener("click",clearFilmsAll)
 }
 
 function addFilm(e) {
@@ -49,9 +51,16 @@ function addFilm(e) {
 }
 
 function deleteFilm(e){
-    if(e.target.id=== "delete-film"){
+    if(e.target.id === "delete-film"){
         ui.deleteFilmFromUI(e.target)
         storage.deleteFilmFromStorage(e.target.parentElement.previousElementSibling.previousElementSibling.textContent)
         ui.displayMessages("Film ya da Dizi kaldırıldı","danger")
     }
+}
+
+function clearFilmsAll(e){
+  if(confirm("Emin misiniz")){
+      ui.clearFilmsFromUI();
+      storage.clearFilmsFromStorage();
+  }
 }
