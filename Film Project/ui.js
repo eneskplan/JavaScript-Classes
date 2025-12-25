@@ -1,7 +1,7 @@
 //ui.js
-function UI() {}
+class UI{
 
-UI.prototype.addFilmToUI = function (newFilm) {
+static addFilmToUI(newFilm) {
   const filmList = document.getElementById("films");
 
   filmList.innerHTML += `
@@ -15,13 +15,13 @@ UI.prototype.addFilmToUI = function (newFilm) {
 `;
 };
 
-UI.prototype.clearInputs = function (element1, element2, element3) {
+static clearInputs(element1, element2, element3) {
   element1.value = "";
   element2.value = "";
   element3.value = "";
 };
 
-UI.prototype.displayMessages = function (message, type) {
+static displayMessages(message, type) {
   const cardBody = document.querySelectorAll(".card-body")[0];
   const div = document.createElement("div");
   div.className = `alert alert-${type}`;
@@ -33,7 +33,7 @@ UI.prototype.displayMessages = function (message, type) {
   }, 1000);
 };
 
-UI.prototype.loadAllFilms = function (films) {
+static loadAllFilms(films) {
   const filmList = document.getElementById("films");
   films.forEach(function (film) {
     filmList.innerHTML += `
@@ -48,13 +48,14 @@ UI.prototype.loadAllFilms = function (films) {
   });
 };
 
-UI.prototype.deleteFilmFromUI = function(element){
+static deleteFilmFromUI(element){
     element.parentElement.parentElement.remove();
 }
 
-UI.prototype.clearFilmsFromUI = function(){
+static clearFilmsFromUI(){
     const filmList = document.getElementById("films");
     while(filmList.firstChild !== null){
         filmList.firstChild.remove();
     }
+}
 }

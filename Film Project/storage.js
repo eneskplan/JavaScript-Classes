@@ -1,12 +1,13 @@
-function Storage() {}
+// storage.js
+class Storage {
 
-Storage.prototype.addFilmToStorage = function (newFilm) {
+  static addFilmToStorage(newFilm) {
     let films = this.getFilmsFromStorage();
     films.push(newFilm);
     localStorage.setItem("films",JSON.stringify(films));
 };
 
-Storage.prototype.getFilmsFromStorage = function () {
+static getFilmsFromStorage() {
   let films;
   if (localStorage.getItem("films") === null) {
     films = [];  
@@ -16,7 +17,7 @@ Storage.prototype.getFilmsFromStorage = function () {
   return films;
 };
 
-Storage.prototype.deleteFilmFromStorage = function(filmTitle){
+static deleteFilmFromStorage(filmTitle){
     let films = this.getFilmsFromStorage();
     films.forEach(function(film,index){
         if(film.title === filmTitle){
@@ -26,6 +27,7 @@ Storage.prototype.deleteFilmFromStorage = function(filmTitle){
     localStorage.setItem("films",JSON.stringify(films));
 }
 
-Storage.prototype.clearFilmsFromStorage = function(){
+static clearFilmsFromStorage(){
     localStorage.removeItem("films");
+}
 }
