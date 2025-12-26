@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Enes Kaplan",
+    "department": "Bilişim",
+    "salary": 3500
+  },
+  {
+    "name": "John Abruzzi",
+    "department": "Bilişim",
+    "salary": 4000
+  },
+  {
+    "name": "Fernando Martin Sucre",
+    "department": "Pazarlama",
+    "salary": 5000
+  }
+]
