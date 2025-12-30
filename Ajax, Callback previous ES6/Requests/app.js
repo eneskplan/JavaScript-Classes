@@ -31,7 +31,7 @@ class Request {
   }
 
   //   PUT Request
-  
+
   put(url, data, callback) {
     this.xhr.open("PUT", url);
     this.xhr.setRequestHeader("Content-type", "application/json");
@@ -45,7 +45,19 @@ class Request {
     };
     this.xhr.send(JSON.stringify(data));
   }
-  
+
+  //   DELETE Request
+  delete(url, callback) {
+    this.xhr.open("DELETE", url);
+    this.xhr.onload = () => {
+      if (this.xhr.status === 200) {
+        callback(null, "Veri silme işlemi başarılı");
+      } else {
+        callback("Delete request :  bir hata oluştu", null);
+      }
+    };
+    this.xhr.send();
+  }
 }
 
 const request = new Request();
@@ -72,15 +84,25 @@ const request = new Request();
 //   }
 // );
 
-request.put(
-  "https://jsonplaceholder.typicode.com/todos/3",
-  { userID: 2, title: "For Example", completed: false },
-  function (err, response) {
-    if (err === null) {
-      console.log(response);
-    } else {
-      console.log(err);
-    }
-  }
-);
+// request.put(
+//   "https://jsonplaceholder.typicode.com/todos/3",
+//   { userID: 2, title: "For Example", completed: false },
+//   function (err, response) {
+//     if (err === null) {
+//       console.log(response);
+//     } else {
+//       console.log(err);
+//     }
+//   }
+// );
 
+// request.delete(
+//   "https://jsonplaceholder.typicode.com/todos/3",
+//   function (err, response) {
+//     if (err === null) {
+//       console.log(response);
+//     } else {
+//       console.log(err);
+//     }
+//   }
+// );
