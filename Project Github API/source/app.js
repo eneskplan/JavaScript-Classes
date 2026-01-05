@@ -24,14 +24,13 @@ function getData(e) {
       .getGithubData(username)
       .then((response) => {
         if (response.user.message === "Not Found") {
-          // Hata mesajı
-          console.log("hata")
+         ui.showError("Kullanıcı bulunamadı")
         } 
         else {
             ui.showUserInfo(response.user)
         }
       })
-      .catch((err) => console.log(err));
+      .catch((err) => ui.showError(err));
   }
   ui.clearInput();
   e.preventDefault();
